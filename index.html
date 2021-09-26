@@ -6,8 +6,12 @@
     <link rel = "stylesheet" href ="style.css">
 </head>
 <body>
-    <div align="center"> 
-    </div>
+    <style>
+        div.a {
+            text-align: center;
+        }
+        </style>
+        div<class = "a">
 <div class = "container">
     <div class = "row">
         <div class = "column-md-4  column-xs-4">
@@ -19,14 +23,22 @@
 Enter your birthday:
 <label for="birthday">Birthday:</label>
 <input type="date" id="birthday" name = "birthday"> </br> </br>
+<script>
+    function check()
+    var a = document.getElementById(frequency)
+    if(a.value == "Never"){
+        location.replace(window.location.href.replace("https://lhuff25.github.io/Survey/", "https:https://habitsbuzz.com/stop-being-couch-potato/"))
+    };
+
+</script>
 Do you exercise regularly?
-<select name="Frequency" ><option>
-    <option value=1 selected = "true"> Never 
-    <option value=2 > Once or Twice a month
-    <option value=3 > Weekly
-    <option value=4 > Two to Four times a Week
-    <option value=5 > Five to Seven times a Week
-    <option value=6 > More than Once a day 
+<select id ="frequency" ><option>
+    <option value=1 id = "n"> Never 
+    <option value=2 id = "y"> Once or Twice a month
+    <option value=3 id = "y1"> = Weekly
+    <option value=4 id = "y2"> Two to Four times a Week
+    <option value=5 id = "y3"> Five to Seven times a Week
+    <option value=6 id = "y4"> More than Once a day 
     </select>
 <p>
     Have you ever indulged in steroids or SARMS?
@@ -51,7 +63,6 @@ Do you exercise regularly?
     </p>
 <button id = "next"> Next Page
 </button> 
-<input type=submit value="Submit form">
 </div>
 </form>
 </body>
