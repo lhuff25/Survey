@@ -7,3 +7,7 @@ br{
 p{
     color: black
 }
+div{
+    max-width: 300;
+    height: 50;
+}
